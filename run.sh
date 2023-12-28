@@ -10,11 +10,10 @@ while true; do
 done
 
 # Source the environment setup script
-source ./setenv.sh
+source setenv.sh
 
 # Run the main Python script
-python3 src/app.py
-#uvicorn src/dalle_api:app
+uvicorn src.controller:app
 
 # Deactivation is not strictly necessary for a script, as the environment changes
 # do not persist when the script finishes
