@@ -1,13 +1,6 @@
 #!/bin/bash
 
-while true; do
-    read -p "Continue? yes/no: " yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Please, answer yes or no.";;
-    esac
-done
+echo "Script execution started."
 
 # Source the environment setup script
 source setenv.sh
