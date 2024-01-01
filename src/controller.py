@@ -21,6 +21,12 @@ def create_image(description, task_id):
     image.save(file_path)
 
 
+# Health checker
+@app.get("/")
+def root():
+    return {"message": "Service is working"}
+
+
 # Эндпоинт для генерации изображения
 @app.post("/generate-image")
 async def generate_image(request: dict,
