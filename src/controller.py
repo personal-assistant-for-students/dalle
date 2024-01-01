@@ -23,7 +23,7 @@ def create_image(description, task_id):
 
 # Health checker
 @app.get("/")
-def root():
+def health_check():
     return {"message": "Service is working"}
 
 
