@@ -1,5 +1,4 @@
 diffusers
-torch
 fastapi
 accelerate
 transformers
