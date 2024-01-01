@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Script execution started."
-
+source setenv.sh
 # Run the main Python script
 uvicorn src.controller:app
 
