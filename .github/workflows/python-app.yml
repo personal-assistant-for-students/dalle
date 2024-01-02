@@ -37,3 +37,20 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+
+  deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/main' # when push to main
+
+      steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to AWS EC2
+        run: |
+          chmod +x deploy.sh
+          ./deploy.sh
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
