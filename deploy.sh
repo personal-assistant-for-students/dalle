@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+echo $SSH_PRIVATE_KEY
+echo $EC2_HOST
+
 echo "$SSH_PRIVATE_KEY" > private_key.pem
 chmod 700 private_key.pem
 
