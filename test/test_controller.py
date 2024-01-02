@@ -8,7 +8,8 @@ client = TestClient(app)
 def test_health_check():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Service is working"}
+    assert response.json() == {"message": "Service is working",
+                               "version": "0.1.0"}
 
 
 @patch('src.controller.create_image')  # mock of create image function
