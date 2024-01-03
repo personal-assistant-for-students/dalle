@@ -25,7 +25,7 @@ def create_image(description, task_id):
 @app.get("/")
 def health_check():
     return {"message": "Service is working",
-            "version": "0.1.0"}
+            "version": "0.1.1"}
 
 
 # Эндпоинт для генерации изображения
