@@ -57,6 +57,7 @@ jobs:
           cd /home/ec2-user/image-gen
           git pull
           nohup bash run.sh &
+          disown
         ENDSSH
       env:
         EC2_HOST: ec2-18-206-220-10.compute-1.amazonaws.com
