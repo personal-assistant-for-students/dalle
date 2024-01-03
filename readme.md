@@ -1,5 +1,36 @@
-- running on http://18.206.220.10:8000  
-- docs on http://18.206.220.10:8000/docs
-- postman collection
-[gen-image.postman_collection.json](https://github.com/personal-assistant-for-students/image-gen/files/13804123/gen-image.postman_collection.json)
-- approximate image generation time 60 minutes
+# Image-Gen: Генератор Изображений на основе описаний
+
+Image-Gen — это FastAPI сервис, который использует модель Stable Diffusion для генерации изображений на основе текстовых описаний.
+
+## Особенности
+- Асинхронная генерация изображений.
+- Получение изображений через уникальный ID задачи.
+- Примерное время генерации изображения — 60 минут.
+
+## Как начать работу
+
+### Предварительные требования
+- Python 3.8 или выше.
+- Установленные зависимости из `requirements.txt`.
+
+### Установка и запуск
+1. Клонируйте репозиторий:
+   ```bash
+   git clone [URL репозитория]
+
+2. **Перейдите в папку проекта:**
+   ```bash
+   cd image-gen
+3. **Запустите скрипт:**
+    ```bash
+   bash run.sh
+   
+## Использование
+Сервис запущен и доступен по адресу: http://18.206.220.10:8000.
+
+## Документация API
+- Для ознакомления с API перейдите по ссылке: http://18.206.220.10:8000/docs.
+- Для тестирования API вы можете использовать предоставленную Postman коллекцию: [gen-image.postman_collection.json](https://github.com/personal-assistant-for-students/image-gen/files/13804123/gen-image.postman_collection.json)
+
+## Да прибудет с вами сила
+![2461fe24-75fd-4ad1-9c9a-28ce5d2c0085.png](images%2F2461fe24-75fd-4ad1-9c9a-28ce5d2c0085.png)
